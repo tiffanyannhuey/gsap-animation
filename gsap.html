@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                margin: 0;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+            }
+
+            .content {
+                flex-grow: 1;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .header {
+                height: 15vh;
+                background-color: red;
+            }
+
+            .links {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height: 100%;
+                color: white;
+            }
+
+            .button {
+                align-self: center;
+            }
+
+            .sidebar {
+                background-color: green;
+                width: 15vw;
+            }
+
+            .footer {
+                height: 15vh;
+                background-color: blue;
+                transform: translateY(100%);
+            }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+        <div class="header">
+            <div class="links">
+                <div class="link">Link 1</div>
+                <div class="link">Link 2</div>
+                <div class="link">Link 3</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="sidebar left"></div>
+            <button class="button">Reverse!</button>
+            <div class="sidebar right"></div>
+        </div>
+        <div class="footer"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js" defer></script>
+        <script src="script.js" defer></script>
+    </body>
+</html>
